@@ -1,0 +1,10 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+@font-face{
+  font-family: 'Bradly Hand ITC';
+  src: url('/fonts/BRADHITC.TTF') format('embedded-opentype'),
+      url('/fonts/BRADHITC.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

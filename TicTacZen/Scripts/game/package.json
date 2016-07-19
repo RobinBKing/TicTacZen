@@ -1,0 +1,24 @@
+{
+  "name": "tictactoe",
+  "version": "0.0.0",
+  "description": "a game",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://rob@tools.mash.is/bitbucket/scm/~rob/tictactoe.git"
+  },
+  "author": "Rob King",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "mocha": "~2.5.3",
+    "chai": "~3.5.0",
+    "request": "~2.72.0",
+    "express": "~4.13.4"
+  }
+}
