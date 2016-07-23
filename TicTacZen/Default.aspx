@@ -22,23 +22,53 @@
                     </a>
                 </div>
             </div>
-            <div class="col-md-4">
-                <h2>Get more libraries</h2>
-                <p>
-                    NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-                </p>
+            <div class="col-md-4 gameSetup">
+                <div class="wrapper">
+                    <div id="boardSize">
+                        <div class="form-group">
+                            <label for="boardSize">Board Size</label>
+                            <select id="boardSelect" class="form-control">
+                                <option value=3>3 X 3</option>
+                                <option value=4>4 X 4</option>
+                                <option value=5>5 X 5</option>
+                                <option value=6>6 X 6</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4">
-                <h2>Web Hosting</h2>
-                <p>
-                    You can easily find a web hosting company that offers the right mix of features and price for your applications.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-                </p>
+            <div class="col-md-4 playerO">
+                <div class="wrapper">
+                    <a class="gfx" href="#">
+                        <img src="Images/paint-circle.png" alt="O" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 playerX">
+                <div class="wrapper">
+                    <div class="name">
+                        <input type="text" class="form-control" placeholder="player X Name" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 gameSetup">
+                <div class="wrapper">
+                    <div class="ctx">
+                          <button class="btn btn-custom" type="submit" name="action">Play
+    <i class="material-icons right">send</i>
+                          </button>
+<%--                        <a href="#" class="btn default">Play</a>--%>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 playerO">
+                <div class="wrapper">
+                    <div class="name">
+                        <input type="text" class="form-control" placeholder="player O Name" />
+                    </div>
+                </div>
             </div>
         </div>
     </div>
