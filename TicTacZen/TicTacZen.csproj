@@ -114,6 +114,7 @@
       <DependentUpon>Site.css</DependentUpon>
     </Content>
     <Content Include="fonts\bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -186,6 +187,11 @@
     <Content Include="fonts\bootstrap\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\bootstrap\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\bootstrap\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\game\cli.js" />
     <Content Include="Scripts\game\lib\game.js" />
@@ -526,6 +532,20 @@
     <Content Include="stylesheets\bootstrap\mixins\_border-radius.scss" />
     <Content Include="stylesheets\bootstrap\mixins\_background-variant.scss" />
     <Content Include="stylesheets\bootstrap\mixins\_alerts.scss" />
+    <Content Include="stylesheets\font-awesome\font-awesome.scss" />
+    <Content Include="stylesheets\font-awesome\_animated.scss" />
+    <Content Include="stylesheets\font-awesome\_bordered-pulled.scss" />
+    <Content Include="stylesheets\font-awesome\_core.scss" />
+    <Content Include="stylesheets\font-awesome\_fixed-width.scss" />
+    <Content Include="stylesheets\font-awesome\_icons.scss" />
+    <Content Include="stylesheets\font-awesome\_larger.scss" />
+    <Content Include="stylesheets\font-awesome\_list.scss" />
+    <Content Include="stylesheets\font-awesome\_mixins.scss" />
+    <Content Include="stylesheets\font-awesome\_path.scss" />
+    <Content Include="stylesheets\font-awesome\_rotated-flipped.scss" />
+    <Content Include="stylesheets\font-awesome\_screen-reader.scss" />
+    <Content Include="stylesheets\font-awesome\_stacked.scss" />
+    <Content Include="stylesheets\font-awesome\_variables.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

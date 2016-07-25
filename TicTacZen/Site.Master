@@ -15,7 +15,7 @@
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/logo-mobile.png" rel="shortcut icon" type="image/x-icon" />
 
-    <meta name="description" content="The description of my page" />
+    <meta name="description" content="Play Tic Tac Toe the Zen way!" />
 </head>
 <body>
     <form runat="server">
@@ -45,7 +45,6 @@
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
-            <hr />
             <footer>
                 <ul class="nav-links">
                     <li><a href="/">Home</a></li>

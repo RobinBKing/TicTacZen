@@ -2,10 +2,13 @@
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
 footer{
-  color: white;
+  @include clearfix;
+  margin: 0 auto;
   /*flex-center();*/
-  font-size: 0.8em;
+  font-size: 1.25em;
+  width: 100%;
   min-height: 100px;
+  background-color: black;
 
   /*+below('s') {
     display: block;
@@ -17,6 +20,7 @@ footer{
     /*col(1/3)*/
     margin: 0;
     padding: 0;
+    color: white;
 
     /*+below('s') {
       float: none !important;
