@@ -7,11 +7,6 @@
   text-align: center;
   background-color: #F0EDDE;
 
-  .wrapper {
-    margin: 0 auto;
-    max-width: 900px;
-  }
-
   .logo {
     margin: 0 auto;
     img {
@@ -25,13 +20,10 @@
     h1 {
       color: black;
       display: inline-block;
-      font-size: 6.8em;
+      font-size: 12em;
       font-weight: normal;
       text-shadow: 0.5px 0.5px 0.5px;
       font-family: 'Bradly Hand ITC';
-      margin: 0;
-      padding: 0;
-      // text-transform uppercase
       /*+below('l')
         font-size 4em
 
