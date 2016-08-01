@@ -22,11 +22,12 @@ $background-color: #F0EDDE;
 
 /// Container's maximum width
 /// @type Length
+$xs-screen: 325px !default;
+$sm-screen: 768px !default;
+$md-screen: 992px !default;
+$lg-screen: 1024px !default;
+$min-width: $xs-screen !default;
 $max-width: 1280px !default;
-//$x-small-screen: 3200px !default;
-//$small-screen: 600px !default;
-//$medium-screen: 992px !default;
-//$large-screen: 1200px !default;
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length

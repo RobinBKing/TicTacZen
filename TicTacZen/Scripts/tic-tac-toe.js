@@ -48,7 +48,7 @@ WebGamePresenter.prototype.isNumeric = function(num){
 var newWebGamePresenter = new WebGamePresenter();
 //interface
 $(document).ready(function() {
-  $('.resetBtn').click(function() {
+    $('#playBtn').click(function () {
     $('.X').removeClass('active');
     $('.O').removeClass('active');
 
@@ -65,6 +65,7 @@ $(document).ready(function() {
       playerOName = 'O';
     }
     var boardSize = $('select#boardSelect').val();
+    console.log(boardSize);
     if (!boardSize) {
       boardSize = 3;
     }

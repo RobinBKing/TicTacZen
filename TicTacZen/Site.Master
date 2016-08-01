@@ -43,23 +43,37 @@
         </asp:ScriptManager>
 
         <div class="container body-content">
+            <div class="jumbotron" id="hero">
+                <div class="title">
+                    <h1>Tic Tac Zen</h1>
+                </div>
+                <div class="logo">
+                    <img src="Images/banner.png" alt="banner"/>
+                </div>
+            </div>
+            <div class="clearfix"></div>            
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <footer>
-                <ul class="nav-links">
-                    <li><a href="/">Home</a></li>
-                </ul>
-                <ul class="social-links">
-                    <li><i class="fa fa-facebook"></i></li>
-                    <li><i class="fa fa-twitter"></i></li>
-                    <li><i class="fa fa-google-plus"></i></li>
-                    <li><i class="fa fa-github-alt"></i></li>
-                </ul>
-                <ul class="legal-links">
-                    <li>Copyright 2016. Robin King. All rights reserved.
-                        <p>&copy; <%: DateTime.Now.Year %> - Tic Tac Zen</p>
-                    </li>
-                </ul>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <ul class="social-links">
+                            <li><i class="fa fa-facebook"></i></li>
+                            <li><i class="fa fa-twitter"></i></li>
+                            <li><i class="fa fa-google-plus"></i></li>
+                            <li><i class="fa fa-github-alt"></i></li>
+                        </ul>   
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <ul class="legal-links">
+                            <li>Copyright 2016. Robin King. All rights reserved.
+                                <p>&copy; <%: DateTime.Now.Year %> - Tic Tac Zen</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </footer>
         </div>
     </form>

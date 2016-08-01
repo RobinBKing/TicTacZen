@@ -2,34 +2,37 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 .jumbotron {
-  margin: 1em 0;
-  overflow: hidden;
-  text-align: center;
-  background-color: #F0EDDE;
-
-  .logo {
-    margin: 0 auto;
-    img {
-      width: 90%;
-      height: auto;
+    margin: 1em 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: #F0EDDE;
+    min-width: $xs-screen;
+   .logo {
+        margin: 0 auto;
+        img {
+            width: 90%;
+            height: auto;
+        }
     }
-  }
-  .title {
-    margin: 0 auto;
+    .title {
+        margin: 0 auto;
+        h1 {
+            color: black;
+            display: inline-block;
+            font-size: 3em;
+            font-weight: normal;
+            text-shadow: 0.5px 0.5px 0.5px;
+            font-family: 'Bradly Hand ITC';
 
-    h1 {
-      color: black;
-      display: inline-block;
-      font-size: 12em;
-      font-weight: normal;
-      text-shadow: 0.5px 0.5px 0.5px;
-      font-family: 'Bradly Hand ITC';
-      /*+below('l')
-        font-size 4em
-
-      +below('s')
-        font-size 2em*/
+            @media only screen and (min-width : $sm-screen) {
+                font-size: 6em;
+            }
+            @media only screen and (min-width : $md-screen) {
+                font-size: 8em;
+            }
+            @media only screen and (min-width : $lg-screen) {
+                font-size: 10em;
+            }
+        }
     }
-  }
-
 }

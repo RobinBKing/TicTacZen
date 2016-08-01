@@ -8158,24 +8158,12 @@ textarea {
   position: absolute;
   width: 1px; }
 
-.container, .body-content {
-  margin: 0 auto;
-  padding: 0;
-  width: 100%;
-  height: auto;
-  max-width: 1280px;
-  max-height: 800px; }
-  .container .row, .body-content .row {
-    margin: 0 auto;
-    padding: 0;
-    width: 100%;
-    height: auto; }
-
 .jumbotron {
   margin: 1em 0;
   overflow: hidden;
   text-align: center;
-  background-color: #F0EDDE; }
+  background-color: #F0EDDE;
+  min-width: 325px; }
   .jumbotron .logo {
     margin: 0 auto; }
     .jumbotron .logo img {
@@ -8186,95 +8174,114 @@ textarea {
     .jumbotron .title h1 {
       color: black;
       display: inline-block;
-      font-size: 12em;
+      font-size: 3em;
       font-weight: normal;
       text-shadow: 0.5px 0.5px 0.5px;
-      font-family: 'Bradly Hand ITC';
-      /*+below('l')
-        font-size 4em
+      font-family: 'Bradly Hand ITC'; }
+      @media only screen and (min-width: 768px) {
+        .jumbotron .title h1 {
+          font-size: 6em; } }
+      @media only screen and (min-width: 992px) {
+        .jumbotron .title h1 {
+          font-size: 8em; } }
+      @media only screen and (min-width: 1024px) {
+        .jumbotron .title h1 {
+          font-size: 10em; } }
 
-      +below('s')
-        font-size 2em*/ }
-
-/*.sidePanel {
-    width: 35%;
+/*.mainPanel {
+  position: relative;
+  overflow: hidden;
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.6;  
+  }
+}*/
+/*.mainPanel::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
     height: 100%;
-    max-width: 480px;
-    min-width: 250px;
-}
-
-#rightSidePanel {
+    z-index: 1;
+    opacity: 0.6;
     background-image: url('../../Images/birds.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
 }*/
-#scorePanel {
+.scorePanel {
   margin: 0 auto;
   font-family: 'Bradly Hand ITC';
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
   font-size: 1em; }
-  #scorePanel .playerX .playerIcon, #scorePanel .playerO .playerIcon {
+  .scorePanel .playerX .playerIcon, .scorePanel .playerO .playerIcon {
     cursor: pointer; }
-    #scorePanel .playerX .playerIcon img, #scorePanel .playerO .playerIcon img {
-      width: 150px;
+    .scorePanel .playerX .playerIcon img, .scorePanel .playerO .playerIcon img {
+      width: 75px;
       height: auto; }
-  #scorePanel .playerX .score, #scorePanel .playerX .name, #scorePanel .playerO .score, #scorePanel .playerO .name {
+  .scorePanel .playerX .score, .scorePanel .playerX .name, .scorePanel .playerO .score, .scorePanel .playerO .name {
     margin: 0 auto;
     padding: 0;
     border-style: solid;
     border-width: 2px;
     display: inline-block;
-    font-size: 1.5em;
-    text-align: center; }
-  #scorePanel .playerX .score, #scorePanel .playerO .score {
+    text-align: center;
+    font-size: 0.75em;
+    height: 20px; }
+  .scorePanel .playerX .score, .scorePanel .playerO .score {
     border-radius: 1.5em;
     width: 50px; }
-  #scorePanel .playerX .name, #scorePanel .playerO .name {
+  .scorePanel .playerX .name, .scorePanel .playerO .name {
     border-radius: .5em;
     width: 100%;
     cursor: text; }
-  #scorePanel .gameSetup {
+  .scorePanel .gameSetup {
+    z-index: 2;
     margin: 0 auto; }
-    #scorePanel .gameSetup .btn-custom {
-      width: 100px;
-      margin: 0 auto; }
-    #scorePanel .gameSetup select, #scorePanel .gameSetup label {
+    .scorePanel .gameSetup .btn-custom, .scorePanel .gameSetup select, .scorePanel .gameSetup label {
       margin: 0 auto;
-      width: 100px;
-      height: auto;
       text-align: center;
-      font-size: 1.5em;
+      font-size: 0.75em;
+      width: 75px;
+      height: 25px; }
+    .scorePanel .gameSetup select, .scorePanel .gameSetup label {
       color: #333333; }
 
-#gameBoard {
+.gameBoard {
   background: url("../../Images/chopsticks-3x3.png") no-repeat center;
   background-size: cover;
   border: 1px solid black;
   border-radius: 2em;
-  margin: 0 auto;
-  width: 50%;
-  height: auto;
-  max-width: 1200px;
-  max-height: 1200px; }
-  #gameBoard .cell {
+  margin: auto;
+  width: 303px;
+  height: 303px;
+  min-width: 303px; }
+  .gameBoard .cell {
     border: 1px solid black;
-    margin: 0 auto;
-    width: 200px;
-    height: 200px;
-    max-width: 200px;
+    margin: 0 auto 0 7.5px;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
     cursor: pointer; }
-  #gameBoard .X, #gameBoard .O {
+  .gameBoard .X, .gameBoard .O {
     display: block;
     margin: 0 auto;
-    width: 150px;
+    width: 75px;
     height: auto;
-    max-width: 150px;
     display: none; }
-    #gameBoard .X img, #gameBoard .O img {
+    .gameBoard .X img, .gameBoard .O img {
       width: 100%;
       height: auto; }
-  #gameBoard .active {
+  .gameBoard .active {
     display: block; }
 
 /*==========  Mobile First Method  ==========*/
@@ -8290,80 +8297,36 @@ textarea {
 /* Extra Small Devices, Phones */
 /* Custom, iPhone Retina */
 footer {
-  margin: 0 auto;
-  /*flex-center();*/
-  font-size: 1.25em;
-  width: 100%;
-  min-height: 100px;
+  margin: 10px auto 0 auto;
   background-color: black;
-  /*+below('s') {
-    display: block;
-    min-height: auto;
-    text-align: center;
-  }*/ }
-  footer:before, footer:after {
-    content: " ";
-    display: table; }
-  footer:after {
-    clear: both; }
+  width: 100%;
+  max-width: 1280px;
+  min-width: 325px;
+  max-height: 100px;
+  min-height: 50px;
+  font-size: 0.75em; }
   footer ul {
-    /*col(1/3)*/
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     color: white;
-    /*+below('s') {
-      float: none !important;
-      margin: 2em 0;
-    }*/ }
+    float: none !important;
+    width: 100%;
+    text-align: center; }
     footer ul li {
       display: inline-block; }
-    footer ul.nav-links {
-      padding: 0;
-      /*+below('l') {
-        col(35/100)
-      }*/
-      /*+below('s') {
-        width: 100%;
-      }*/ }
-      footer ul.nav-links li {
-        border-right: 1px solid white;
-        padding: 0 1em; }
-        footer ul.nav-links li:last-child {
-          border-right: none; }
-        footer ul.nav-links li a {
-          color: white;
-          text-decoration: none; }
-          footer ul.nav-links li a:hover {
-            text-decoration: underline; }
-    footer ul.social-links {
-      text-align: center;
-      /*+below('l') {
-        col(30/100)
-        text-align: center;
-      }
-
-      +below('s') {
-        width: 100%;
-      }*/ }
-      footer ul.social-links li {
-        padding: 0 0.5rem;
-        /*+below('s') {
-          padding: 0 0.75rem;*/ }
-        footer ul.social-links li a {
-          color: white; }
-      footer ul.social-links .fa {
-        font-size: 1rem;
-        /*+below('s') {
-            font-size: 1.5rem;
-          }*/ }
-    footer ul.legal-links {
-      text-align: right;
-      /*+below('l') {
-        col(35/100)
-      }*/
-      /*+below('s') {
-        width: 100%;
-      }*/ }
+  footer.social-links .fa {
+    font-size: 1rem; }
+  footer.legal-links li {
+    font-size: 1rem; }
+  @media only screen and (min-width: 768px) {
+    footer {
+      font-size: 1em; } }
+  @media only screen and (min-width: 992px) {
+    footer {
+      font-size: 1.5em; } }
+  @media only screen and (min-width: 1024px) {
+    footer {
+      font-size: 2em; } }
 
 .btn-custom {
   border-radius: 0.5em;
