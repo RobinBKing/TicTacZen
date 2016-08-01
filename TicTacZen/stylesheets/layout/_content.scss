@@ -35,11 +35,15 @@
     font-weight: bold;
     font-size: 1em;
     .playerX, .playerO {
+
         .playerIcon {
             cursor: pointer;
             img {
                 width: 75px;
                 height: auto;
+                &:hover, &:active {
+                    width: 70px;
+                }                
             }
         }
         .score, .name {

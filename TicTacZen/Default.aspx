@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-xs-4 playerX">
                     <a class="playerIcon" href="#">
-                        <img src="Images/paint-X-black.png" alt="X" />
+                        <img id="playerXIcon" class="playerImage" src="Images/paint-X-black.png" alt="X" />
                     </a>
                 </div>
                 <div class="col-xs-4 gameSetup">
@@ -22,13 +22,13 @@
                 </div>
                 <div class="col-xs-4 playerO">
                     <a class="playerIcon" href="#">
-                        <img class="playerImage" src="Images/paint-circle.png" alt="O" />
+                        <img id="playerOIcon" class="playerImage" src="Images/paint-circle.png" alt="O" />
                     </a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-4 playerX">
-                    <input type="text" class="form-control name" placeholder="player X Name" />
+                    <input id="playerXName" class="form-control name" type="text" placeholder="player X Name" />
                 </div>
                 <div class="col-xs-4 gameSetup">
                     <div id="playBtn">
@@ -36,7 +36,7 @@
                     </div>
                 </div>
                 <div class="col-xs-4 playerO">
-                    <input type="text" class="form-control name" placeholder="player O Name" />
+                    <input id="playerOName"" class="form-control name" type="text" placeholder="player O Name" />
                 </div>
             </div>
             <div class="row">

@@ -49,7 +49,7 @@ var newWebGamePresenter = new WebGamePresenter();
 //interface
 $(document).ready(function() {
     $('#playBtn').click(function () {
-    $('.X').removeClass('active');
+        $('.X').removeClass('active');
     $('.O').removeClass('active');
 
     var newGame = new Game();
@@ -58,25 +58,25 @@ $(document).ready(function() {
     var choice = 0; //holds line info as in numeric
     var playerXName = $('input#playerXName').val();
     if (playerXName === '') {
-      playerXName = 'X';
+        playerXName = 'X';
     }
     var playerOName = $('input#playerOName').val();
     if (playerOName === '') {
       playerOName = 'O';
     }
     var boardSize = $('select#boardSelect').val();
-    console.log(boardSize);
     if (!boardSize) {
       boardSize = 3;
     }
     var newActivePlayer = 'X';
     alert('Click on the player that goes first.');
-    $('.playerX').click(function() {
+    $('img#playerXIcon').click(function () {
       newActivePlayer = 'X';
     });
-    $('.playerO').click(function() {
+    $('img#playerOIcon').click(function () {
       newActivePlayer = 'O';
     });
+    console.log(newActivePlayer);
     newWebGamePresenter.newPlayers(playerXName, playerOName);
     newWebGamePresenter.newGame(newActivePlayer, boardSize);
     newWebGamePresenter.Game.newGameboardArray();

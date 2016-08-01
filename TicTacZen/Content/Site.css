@@ -8227,6 +8227,8 @@ textarea {
     .scorePanel .playerX .playerIcon img, .scorePanel .playerO .playerIcon img {
       width: 75px;
       height: auto; }
+      .scorePanel .playerX .playerIcon img:hover, .scorePanel .playerX .playerIcon img:active, .scorePanel .playerO .playerIcon img:hover, .scorePanel .playerO .playerIcon img:active {
+        width: 70px; }
   .scorePanel .playerX .score, .scorePanel .playerX .name, .scorePanel .playerO .score, .scorePanel .playerO .name {
     margin: 0 auto;
     padding: 0;
